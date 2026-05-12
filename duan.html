@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Kho lưu trữ dự án - Nguyễn Huỳnh Trung Thành</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        /* Đảm bảo các khung hình ảnh đều nhau */
+        .thumbnail img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Đảm bảo các khung nội dung và nút bấm đều nhau */
+        .caption {
+            min-height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Trang trí nút bấm trong Modal */
+        .btn-info.btn-lg {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="padding-top: 20px;">
+
+<div class="container">
+    <div class="page-header text-center">
+        <h1>KHO LƯU TRỮ DỰ ÁN</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=500" alt="Web Project">
+                <div class="caption text-center">
+                    <h3>Portfolio Website</h3>
+                    <p>Trang web cá nhân sử dụng Bootstrap 3 và Netlify.</p>
+                    <p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalProject1">
+                            <span class="glyphicon glyphicon-eye-open"></span> Chi tiết dự án
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500" alt="Java Project">
+                <div class="caption text-center">
+                    <h3>Quản lý Sinh viên</h3>
+                    <p>Ứng dụng Console Java áp dụng tính đóng gói và kế thừa.</p>
+                    <p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalProject2">
+                            <span class="glyphicon glyphicon-eye-open"></span> Chi tiết dự án
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalProject1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><b>Dự án: Portfolio Website</b></h4>
+            </div>
+            <div class="modal-body text-center">
+                <p class="text-left">Đây là dự án xây dựng trang web cá nhân để lưu trữ các bài tập trong quá trình học tập tại Tra Vinh University.</p>
+                <hr>
+                <p>Xem toàn bộ nội dung dự án tại đây:</p>
+                <a href="LINK_TÀI_LIỆU_DỰ_ÁN_1" target="_blank" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-new-window"></span> Mở Tài Liệu Dự Án
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalProject2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><b>Dự án: Quản lý Sinh viên (Java)</b></h4>
+            </div>
+            <div class="modal-body text-center">
+                <p class="text-left">Xây dựng hệ thống quản lý danh sách sinh viên, áp dụng các kiến thức về Lập trình hướng đối tượng (OOP) như Inheritance và Encapsulation.</p>
+                <hr>
+                <p>Xem chi tiết Slide thuyết trình:</p>
+                <a href="LINK_TÀI_LIỆU_DỰ_ÁN_2" target="_blank" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-blackboard"></span> Xem Slide Dự Án
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container text-center">
+    <hr>
+    <p>&copy; 2026 - Nguyễn Huỳnh Trung Thành</p>
+</footer>
+
+</body>
+</html>
